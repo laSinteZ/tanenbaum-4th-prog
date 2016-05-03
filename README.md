@@ -37,7 +37,7 @@ In some programming language you like, write the following procedures: `woman_wa
 * The reclamation age threshhold
 * The clock interrupt interval expressed as number of memory references
 * A file containing the sequence of page references
-
+  
 1. Describe the basic data structures and algorithms in your implementation.
 2. Show that your simulation behaves as expected for a simple (but nontrivial) input example.
 3. Plot the number of page faults and working set size per 1000 memory references.
@@ -48,3 +48,21 @@ In some programming language you like, write the following procedures: `woman_wa
 1. Explain the main concepts behind the program, and describe what you expect the output to show for some practical virtual memory architecture.
 2. Run the program on some computer and explain how well the data fit your expectations.
 3. Repeat part *2* but for an older computer with a different architecture and explain any major differences in the output.
+
+**54** Write a program that will demonstrate the difference between using a local page replacement policy and a global one for the simple case of two processes. You will need a routine that can generate a page reference string based on a statistical model. This model has N states numbered from 0 to N − 1 representing each of the possible page references and a probability pi associated with each state i representing the chance that the next reference is to the same page. Otherwise, the next page reference will be one of the other pages with equal probability.
+
+1. Demonstrate that the page reference string-generation routine behaves properly for some small N.
+2. Compute the page fault rate for a small example in which there is one process and a fixed number of page frames. Explain why the behavior is correct.
+3. Repeat part 2 with two processes with independent page reference sequences and twice as many page frames as in part 2
+4. Repeat part 4 but using a global policy instead of a local one. Also, contrast the per-process page fault rate with that of the local policy approach.
+
+**55** Write a program that can be used to compare the effectiveness of adding a tag field to TLB entries when control is toggled between two programs. The tag field is used to effectively label each entry with the process id. Note that a nontagged TLB can be simulated by requiring that all TLB entries have the same tag at any one time. The inputs will be:
+* The number of TLB entries available
+* The clock interrupt interval expressed as number of memory references
+* A file containing a sequence of (process, page references) entries
+* The cost to update one TLB entry
+  
+1. Describe the basic data structures and algorithms in your implementation.
+2. Show that your simulation behaves as expected for a simple (but nontrivial) input
+example.
+3. Plot the number of TLB updates per 1000 references.
