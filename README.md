@@ -25,7 +25,7 @@
 
 In some programming language you like, write the following procedures: `woman_wants_to_enter`, `man_wants_to_enter`, `woman_leaves`, `man_leaves`. You may use whatever counters and synchronization techniques you like.
 
-**61** Rewrite the program of Fig. 2-23 to handle more than two processes.
+**61** [[Solved]](https://github.com/laSinteZ/tanenbaum-4th-prog/blob/master/chapter_2/261.c) Rewrite the program of Fig. 2-23 to handle more than two processes.
 
 **62** Write a producer-consumer problem that uses threads and shares a common buffer. However, do not use semaphores or any other synchronization primitives to guard the shared data structures. Just let each thread access them when it wants to. Use sleep and wakeup to handle the full and empty conditions. See how long it takes for a fatal race condition to occur. For example, you might have the producer print a number once in a while. Do not print more than one number every minute because the I/O could affect the race conditions.
 
