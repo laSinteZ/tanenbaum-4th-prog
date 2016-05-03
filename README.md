@@ -33,7 +33,7 @@ In some programming language you like, write the following procedures: `woman_wa
 * The reclamation age threshhold
 * The clock interrupt interval expressed as number of memory references
 * A file containing the sequence of page references
---1. Describe the basic data structures and algorithms in your implementation.
---2. Show that your simulation behaves as expected for a simple (but nontrivial) input example.
---3. Plot the number of page faults and working set size per 1000 memory references.
---4. Explain what is needed to extend the program to handle a page reference stream that also includes writes.
+1. Describe the basic data structures and algorithms in your implementation.
+2. Show that your simulation behaves as expected for a simple (but nontrivial) input example.
+3. Plot the number of page faults and working set size per 1000 memory references.
+4. Explain what is needed to extend the program to handle a page reference stream that also includes writes.
