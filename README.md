@@ -1,4 +1,5 @@
 # Programming tasks, Tanenbaum 4th edition
+[Chapter 1](Chapter 1)
 ##Chapter 1
 **34** Write a shell that is similar to Fig. 1-19 but contains enough code that it actually works so you can test it. You might also add some features such as redirection of input and output, pipes, and background jobs.
 
@@ -40,6 +41,7 @@ In some programming language you like, write the following procedures: `woman_wa
 4. Explain what is needed to extend the program to handle a page reference stream that also includes writes.
 
 **53** Write a program that demonstrates the effect of TLB misses on the effective memory access time by measuring the per-access time it takes to stride through a large array.
+
 1. Explain the main concepts behind the program, and describe what you expect the output to show for some practical virtual memory architecture.
 2. Run the program on some computer and explain how well the data fit your expectations.
 3. Repeat part *2* but for an older computer with a different architecture and explain any major differences in the output.
