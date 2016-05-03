@@ -38,3 +38,8 @@ In some programming language you like, write the following procedures: `woman_wa
 2. Show that your simulation behaves as expected for a simple (but nontrivial) input example.
 3. Plot the number of page faults and working set size per 1000 memory references.
 4. Explain what is needed to extend the program to handle a page reference stream that also includes writes.
+
+**53** Write a program that demonstrates the effect of TLB misses on the effective memory access time by measuring the per-access time it takes to stride through a large array.
+1. Explain the main concepts behind the program, and describe what you expect the output to show for some practical virtual memory architecture.
+2. Run the program on some computer and explain how well the data fit your expectations.
+3. Repeat part *2* but for an older computer with a different architecture and explain any major differences in the output.
