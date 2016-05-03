@@ -2,7 +2,7 @@
 [Chapter 1](#chapter-1)
 [Chapter 2](#chapter-2)
 [Chapter 3](#chapter-3)
-[Chapter 4](#chapter-3)
+[Chapter 4](#chapter-4)
 
 ##Chapter 1
 **34** Write a shell that is similar to Fig. 1-19 but contains enough code that it actually works so you can test it. You might also add some features such as redirection of input and output, pipes, and background jobs.
