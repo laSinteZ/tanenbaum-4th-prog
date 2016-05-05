@@ -16,7 +16,7 @@
 
 **58** Assume that you have an operating system that provides semaphores. Implement a message system. Write the procedures for sending and receiving messages.
 
-**59** Solve the dining philosophers problem using monitors instead of semaphores.
+**59** [[Solved]](https://github.com/laSinteZ/tanenbaum-4th-prog/blob/e1862565dbdf64d3180c9ac3b8f6a2b679108a13/chapter_2/59/DinningPhilosophers.java) Solve the dining philosophers problem using monitors instead of semaphores.
 
 **60** Suppose that a university wants to show off how politically correct it is by applying the U.S. Supreme Court’s ‘‘Separate but equal is inherently unequal’’ doctrine to gender as well as race, ending its long-standing practice of gender-segregated bathrooms on campus. However, as a concession to tradition, it decrees that when a woman is in a bathroom, other women may enter, but no men, and vice versa. A sign with a sliding marker on the door of each bathroom indicates which of three possible states it is currently in:
 * Empty
