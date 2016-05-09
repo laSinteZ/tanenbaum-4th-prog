@@ -72,8 +72,8 @@ In some programming language you like, write the following procedures: `woman_wa
 example.
 3. Plot the number of TLB updates per 1000 references.
 
-##Chapter 4 (1/6)
-**43** Write a program that reverses the bytes of a file, so that the last byte is now first and the first byte is now last. It must work with an arbitrarily long file, but try to make it reasonably efficient.
+##Chapter 4 (2/6)
+**43** [[Solved]](https://github.com/laSinteZ/tanenbaum-4th-prog/blob/master/chapter_4/43.c)Write a program that reverses the bytes of a file, so that the last byte is now first and the first byte is now last. It must work with an arbitrarily long file, but try to make it reasonably efficient.
 
 **44** Write a program that starts at a given directory and descends the file tree from that point recording the sizes of all the files it finds. When it is all done, it should print a histogram of the file sizes using a bin width specified as a parameter (e.g., with 1024, file sizes of 0 to 1023 go in one bin, 1024 to 2047 go in the next bin, etc.).
 
