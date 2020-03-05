@@ -8,10 +8,12 @@
 [Chapter 8](#chapter-8)
 [Chapter 9](#chapter-9)
 
-## Chapter 1 (0/1)
+## Chapter 1 
+### (0/1)
 **34** Write a shell that is similar to Fig. 1-19 but contains enough code that it actually works so you can test it. You might also add some features such as redirection of input and output, pipes, and background jobs.
 
-## Chapter 2 (4/9)
+## Chapter 2
+### (4/9)
 **57** [[Solved]](https://github.com/laSinteZ/tanenbaum-4th-prog/tree/master/chapter_2/57) Write a shell script that produces a file of sequential numbers by reading the last number in the file, adding 1 to it, and then appending it to the file. Run one instance of the script in the background and one in the foreground, each accessing the same file. How long does it take before a race condition manifests itself? What is the critical region? Modify the script to prevent the race. (Hint: use `ln file file.lock` to lock the data file.)
 
 **58** Assume that you have an operating system that provides semaphores. Implement a message system. Write the procedures for sending and receiving messages.
@@ -72,7 +74,8 @@ In some programming language you like, write the following procedures: `woman_wa
 example.
 3. Plot the number of TLB updates per 1000 references.
 
-## Chapter 4 (2/6)
+## Chapter 4
+### (2/6)
 **43** [[Solved]](https://github.com/laSinteZ/tanenbaum-4th-prog/blob/master/chapter_4/43.c)Write a program that reverses the bytes of a file, so that the last byte is now first and the first byte is now last. It must work with an arbitrarily long file, but try to make it reasonably efficient.
 
 **44** Write a program that starts at a given directory and descends the file tree from that point recording the sizes of all the files it finds. When it is all done, it should print a histogram of the file sizes using a bin width specified as a parameter (e.g., with 1024, file sizes of 0 to 1023 go in one bin, 1024 to 2047 go in the next bin, etc.).
@@ -85,14 +88,16 @@ example.
 
 **48** Implement a simulated file system that will be fully contained in a single regular file stored on the disk. This disk file will contain directories, i-nodes, free-block information, file data blocks, etc. Choose appropriate algorithms for maintaining free-block information and for allocating data blocks (contiguous, indexed, linked). Your program will accept system commands from the user to create/delete directories, create/ delete/open files, read/write from/to a selected file, and to list directory contents
 
-## Chapter 5 (0/3)
+## Chapter 5
+### (0/3)
 **55** Write a program that simulates stable storage. Use two large fixed-length files on your disk to simulate the two disks.
 
 **56** Write a program to implement the three disk-arm scheduling algorithms. Write a driver program that generates a sequence of cylinder numbers (0–999) at random, runs the three algorithms for this sequence and prints out the total distance (number of cylinders) the arm needs to traverse in the three algorithms.
 
 **57** Write a program to implement multiple timers using a single clock. Input for this program consists of a sequence of four types of commands (S <int>, T, E <int>, P): S <int> sets the current time to <int>; T is a clock tick; and E <int> schedules a signal to occur at time <int>; P prints out the values of Current time, Next signal, and Clock header. Your program should also print out a statement whenever it is time to raise a signal.
 
-## Chapter 6 (0/6)
+## Chapter 6
+### (0/6)
 **39** A student majoring in anthropology and minoring in computer science has embarked on a research project to see if African baboons can be taught about deadlocks. He locates a deep canyon and fastens a rope across it, so the baboons can cross hand-overhand. Several baboons can cross at the same time, provided that they are all going in the same direction. If eastward-moving and westward-moving baboons ever get onto the rope at the same time, a deadlock will result (the baboons will get stuck in the middle) because it is impossible for one baboon to climb over another one while suspended over the canyon. If a baboon wants to cross the canyon, he must check to see that no other baboon is currently crossing in the opposite direction. Write a program using semaphores that avoids deadlock. Do not worry about a series of eastward-moving baboons holding up the westward-moving baboons indefinitely.
 
 **40** Repeat the previous problem, but now avoid starvation. When a baboon that wants to cross to the east arrives at the rope and finds baboons crossing to the west, he waits until the rope is empty, but no more westward-moving baboons are allowed to start until at least one baboon has crossed the other way.
@@ -105,7 +110,8 @@ example.
 
 **44** In certain countries, when two people meet they bow to each other. The protocol is that one of them bows first and stays down until the other one bows. If they bow at the same time, they will both stay bowed forever. Write a program that does not deadlock.
 
-## Chapter 8 (0/4)
+## Chapter 8
+### (0/4)
 **35** Copying buffers takes time. Write a C program to find out how much time it takes on a system to which you have access. Use the clock or times functions to determine how long it takes to copy a large array. Test with different array sizes to separate copying time from overhead time.
 
 **36** Write C functions that could be used as client and server stubs to make an RPC call to the standard printf function, and a main program to test the functions. The client and server should communicate by means of a data structure that could be transmitted over a network. You may impose reasonable limits on the length of the format string and thenumber, types, and sizes of the variables your client stub will accept.
@@ -114,7 +120,8 @@ example.
 
 **38** One of the simplest ways to implement a publish/subscribe system is via a centralized broker that receives published articles and distributes them to the appropriate subscribers. Write a multithreaded application that emulates a broker-based pub/sub system. Publisher and subscriber threads may communicate with the broker via (shared) memory. Each message should start with a length field followed by that many characters. Publishers send messages to the broker where the first line of the message contains a hierarchical subject line separated by dots followed by one or more lines that comprise the published article. Subscribers send a message to the broker with a single line containing a hierarchical interest line separated by dots expressing the articles they are interested in. The interest line may contain the wildcard symbol ‘‘*’’. The broker must respond by sending all (past) articles that match the subscriber’s interest. Articles in the message are separated by the line ‘‘BEGIN NEW ARTICLE.’’ The subscriber should print each message it receives along with its subscriber identity (i.e., its interest line). The subscriber should continue to receive any new articles that are posted and match its interests. Publisher and subscriber threads can be created dynamically from the terminal by typing ‘‘P’’ or ‘‘S’’ (for publisher or subscriber) followed by the hierarchical subject/interest line. Publishers will then prompt for the article. Typing a single line containing ‘‘.’’ will signal the end of the article. (This project can also be implemented using processes communicating via TCP.)
 
-## Chapter 9 (0/5)
+## Chapter 9
+### (0/5)
 **58** Write a pair of programs, in C or as shell scripts, to send and receive a message by a covert channel on a UNIX system. (Hint: A permission bit can be seen even when a file is otherwise inaccessible, and the sleep command or system call is guaranteed to delay for a fixed time, set by its argument.) Measure the data rate on an idle system. Then create an artificially heavy load by starting up numerous different background processes and measure the data rate again.
 
 **59** Several UNIX systems use the DES algorithm for encrypting passwords. These systems typically apply DES 25 times in a row to obtain the encrypted password. Download an implementation of DES from the Internet and write a program that encrypts a password and checks if a password is valid for such a system. Generate a list of 10 encrypted passwords using the Morris-Thomson protection scheme. Use 16-bit salt for your program.
